@@ -47,7 +47,7 @@
           Cake Castle adalah sebuah toko kue yang memadukan keanggunan tradisional dengan inovasi modern dalam dunia pastry dan baking. Terletak di jantung kota, toko ini menjadi tujuan favorit bagi pecinta kue yang menghargai cita rasa
           berkualitas tinggi dan estetika yang menawan.
         </p>
-        <p>Cake Castle berdiri dengan misi menghadirkan kebahagiaan melalui setiap gigitan. Setiap produk yang dihasilkan mencerminkan perhatian terhadap kualitas bahan, keahlian dalam baking, dan kreativitas dalam desain.</p>
+        <p>Cake Castle berdiri dengan misi menghadirkan kebahagiaan melalui setiap gigitan. Setiap produk yang dihasilkan mencerminkan perhatian terhadap kualitas bahan, keahlian dalam baking, dan kreativitas dalam desain.</p>
       </div>
 
       <!-- Catalog Section -->
@@ -113,46 +113,43 @@
       <div class="w3-container w3-padding-32" id="contact">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Order Form</h3>
         <p>Isi formulir di bawah untuk memesan kue favorit Anda! Kami akan memastikan setiap detail pesanan sesuai dengan keinginan Anda.</p>
-        <form action="/action_page.php" target="_blank">
+        <form id="OrderForm" action="https://script.google.com/macros/s/AKfycbygOPbyfbPi8ztBc9zqMqUWJHMBLT6WnM2SKLGo4IsKgh8A2e5X8Bajjgoddo1mXIPTlA/exec" method="POST" target="_blank">
           <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama" />
           <input class="w3-input w3-section w3-border" type="text" placeholder="No Telepon " required name="No Telepon" />
           <input class="w3-input w3-section w3-border" type="text" placeholder="Pesanan" required name="Pesanan" />
           <input class="w3-input w3-section w3-border" type="text" placeholder="Catatan" required name="Catatan" />
           <button class="w3-button w3-pink w3-section" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
         </form>
-      </div>
+      </div>
       <!-- End page content -->
 
     <!-- Footer -->
-     <!-- Footer -->
-</body>
-</html>
-    
-<!-- Footer -->
-<footer class="w3-center w3-pink w3-padding-16">
-  <p>Powered by <a href="https://statistics.uii.ac.id/"  title="W3.CSS" target="_blank" class="w3-hover-text-green">jasmin & diva</a></p>
-</footer>
+    <footer class="w3-center w3-pink w3-padding-16">
+      <p>Powered by <a href="https://statistics.uii.ac.id/"  title="W3.CSS" target="_blank" class="w3-hover-text-green">jasmin & diva</a></p>
+    </footer>
 
- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbygOPbyfbPi8ztBc9zqMqUWJHMBLT6WnM2SKLGo4IsKgh8A2e5X8Bajjgoddo1mXIPTlA/exec';
-   const form = document.getElementById('OrderForm');
+    <!-- JavaScript untuk Formulir -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbygOPbyfbPi8ztBc9zqMqUWJHMBLT6WnM2SKLGo4IsKgh8A2e5X8Bajjgoddo1mXIPTlA/exec';
+      const form = document.getElementById('OrderForm');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-  const formData = new FormData(form);
+        const formData = new FormData(form);
 
-  fetch(scriptURL, { method: 'POST', body: formData })
-    .then((response) => {
-      alert('Pesanan berhasil dikirim!');
-      form.reset();
-    })
-    .catch((error) => {
-      console.error('Error!', error.message);
-      alert('Terjadi kesalahan, coba lagi nanti.');
-    });
-});
-  </script>
- </body>
+        fetch(scriptURL, { method: 'POST', body: formData })
+          .then((response) => {
+            alert('Pesanan berhasil dikirim!');
+            form.reset();
+          })
+          .catch((error) => {
+            console.error('Error!', error.message);
+            alert('Terjadi kesalahan, coba lagi nanti.');
+          });
+      });
+    </script>
+  </body>
 </html>
