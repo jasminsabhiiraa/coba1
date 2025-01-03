@@ -115,17 +115,17 @@
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Order Form</h3>
   <p>Isi formulir di bawah untuk memesan kue favorit Anda! Kami akan memastikan setiap detail pesanan sesuai dengan keinginan Anda.</p>
   <form action="/action_page.php" target="_blank">
-    <label for="nama">Nama: <span style="color: red;">*</span></label>
-    <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama" id="nama" />
+    <label for="Nama">Nama: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama" id="Nama" />
     
-    <label for="no-telepon">No Telepon: <span style="color: red;">*</span></label>
-    <input class="w3-input w3-section w3-border" type="text" placeholder="No Telepon" required name="No Telepon" id="no-telepon" />
+    <label for="No-Telepon">No Telepon: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="No Telepon" required name="No Telepon" id="No-Telepon" />
     
-    <label for="pesanan">Pesanan: <span style="color: red;">*</span></label>
-    <input class="w3-input w3-section w3-border" type="text" placeholder="Pesanan" required name="Pesanan" id="pesanan" />
+    <label for="Pesanan">Pesanan: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Pesanan" required name="Pesanan" id="Pesanan" />
     
-    <label for="catatan">Catatan:</label>
-    <textarea class="w3-input w3-section w3-border" placeholder="Catatan" name="Catatan" id="catatan"></textarea>
+    <label for="Catatan">Catatan:</label>
+    <textarea class="w3-input w3-section w3-border" placeholder="Catatan" name="Catatan" id="Catatan"></textarea>
     
     <button class="w3-button w3-pink w3-section" type="submit">
       <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -143,7 +143,7 @@
     <!-- JavaScript untuk Formulir -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwlA_eWcddF7CUrQTE9LNp6IKhv2RlRV1j2XPaK_K1SdoY1CBCCyAkNgUIEAnkgG6yWxQ/exec';
-      const form = document.getElementById('OrderForm');
+      const form = document.getElementById('order form');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
