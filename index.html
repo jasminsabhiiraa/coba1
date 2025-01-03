@@ -110,19 +110,29 @@
       </div>
 
       <!-- Order Section -->
-      <div class="w3-container w3-padding-32" id="contact">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Order Form</h3>
-        <p>Isi formulir di bawah untuk memesan kue favorit Anda! Kami akan memastikan setiap detail pesanan sesuai dengan keinginan Anda.</p>
-        <form id="OrderForm" action="https://script.google.com/macros/s/AKfycbygOPbyfbPi8ztBc9zqMqUWJHMBLT6WnM2SKLGo4IsKgh8A2e5X8Bajjgoddo1mXIPTlA/exec" method="POST" target="_blank">
-          <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama" />
-          <input class="w3-input w3-section w3-border" type="text" placeholder="No Telepon " required name="No Telepon" />
-          <input class="w3-input w3-section w3-border" type="text" placeholder="Pesanan" required name="Pesanan" />
-          <input class="w3-input w3-section w3-border" type="text" placeholder="Catatan" required name="Catatan" />
-          <button class="w3-button w3-pink w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
-      </div>
+      <!-- Order Section -->
+<div class="w3-container w3-padding-32" id="order form">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Order Form</h3>
+  <p>Isi formulir di bawah untuk memesan kue favorit Anda! Kami akan memastikan setiap detail pesanan sesuai dengan keinginan Anda.</p>
+  <form action="/action_page.php" target="_blank">
+    <label for="nama">Nama: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama" id="nama" />
+    
+    <label for="no-telepon">No Telepon: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="No Telepon" required name="No Telepon" id="no-telepon" />
+    
+    <label for="pesanan">Pesanan: <span style="color: red;">*</span></label>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Pesanan" required name="Pesanan" id="pesanan" />
+    
+    <label for="catatan">Catatan:</label>
+    <textarea class="w3-input w3-section w3-border" placeholder="Catatan" name="Catatan" id="catatan"></textarea>
+    
+    <button class="w3-button w3-pink w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </button>
+  </form>
+</div>
+
       <!-- End page content -->
 
     <!-- Footer -->
