@@ -181,8 +181,6 @@
 
         const formData = new FormData(form);
         
-        alert('Pesanan Anda akan segera diproses!');
-        
         fetch(scriptURL, { method: 'POST', body: formData })
           .then((response) => {
             alert('Pesanan berhasil dikirim!');
